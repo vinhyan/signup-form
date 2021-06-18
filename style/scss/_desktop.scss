@@ -1,0 +1,56 @@
+@media all and (min-width: 765px) {
+    .desktop-view-container {
+        width: 90%;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+
+    .top-container {
+        width: 50%;
+        height: auto;
+    }
+
+    .bottom-container {
+        width: 50%;
+        height: auto;
+
+    }
+
+    %container-desktop {
+        min-width: 70%;
+        margin: 0 auto;
+        
+    }
+
+    .title-wrap, .trial-wrap {
+        @extend %container-desktop;
+        text-align: left;
+    }
+
+    .title-wrap {
+
+        h2 {
+            font-size: 3em;
+            text-align: left;
+            width: 100%;
+
+        }
+
+        p {
+            width: 80%;
+            margin: 0 auto;
+
+        }
+    }
+
+    .registrar-container {
+        min-width: 70%;
+        margin: 20px auto;
+    }
+
+    
+}

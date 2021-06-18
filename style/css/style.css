@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: whitesmoke;
+  background-image: url(../../images/bg-intro-mobile.png);
+  background-color: #ff7a7a;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.top-container, .trial-wrap, .registrar-container, .attribution {
+  max-width: 90%;
+  margin: 0 auto;
+  width: 400px;
+}
+
+.top-container {
+  height: 30%;
+}
+
+.top-container .title-wrap {
+  padding: 7vh 0;
+}
+
+.top-container .title-wrap h2 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.registrar-container .input-container input, .registrar-container button {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.trial-wrap {
+  padding: 15px 0;
+  border-radius: 10px;
+  background: #6055a5;
+  box-shadow: 0px 5px 0px 0px rgba(57, 50, 98, 0.5);
+}
+
+.trial-wrap div {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.registrar-container {
+  background: whitesmoke;
+  box-shadow: 0px 5px 0px 0px rgba(194, 194, 194, 0.5);
+  margin-top: 20px;
+  margin-bottom: 7vh;
+  border-radius: 10px;
+  padding: 20px;
+  color: #3e3c49;
+}
+
+.registrar-container .input-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.registrar-container .input-container input {
+  background-color: whitesmoke;
+  border: 1px solid gainsboro;
+  padding: 10px 20px;
+  font-size: 1.2em;
+}
+
+.registrar-container .input-container input:focus {
+  outline: none;
+  border: 1px solid #6055a5;
+}
+
+.registrar-container .input-container input::placeholder {
+  font-weight: 600;
+}
+
+.registrar-container .input-container input.none-text::placeholder {
+  opacity: 0;
+}
+
+.registrar-container .input-container input.red-text::placeholder {
+  color: #ff7a7a;
+}
+
+.registrar-container .input-container .err-msg {
+  font-size: 0.7em;
+  text-align: right;
+  color: #ff7a7a;
+  font-style: italic;
+  padding: 0.7em 0;
+}
+
+.registrar-container .input-container img {
+  position: absolute;
+  top: 20%;
+  left: 85%;
+  transform: translateY(-20%);
+  display: none;
+}
+
+.registrar-container .input-container img.error-on {
+  display: block;
+}
+
+.registrar-container button {
+  background: #38cc8c;
+  box-shadow: 0px 5px 0px 0px rgba(32, 126, 85, 0.5);
+  border: 1px solid #30bb7f;
+  text-transform: uppercase;
+  color: whitesmoke;
+  display: inline-block;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.registrar-container button:hover {
+  opacity: 0.7;
+}
+
+.registrar-container .tnc {
+  font-size: 0.7em;
+  margin-top: 20px;
+  color: #b9b6d3;
+}
+
+.registrar-container a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #ff7a7a;
+}
+
+.attribution {
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #6055a5;
+}
+
+@media all and (min-width: 765px) {
+  .desktop-view-container {
+    width: 90%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .top-container {
+    width: 50%;
+    height: auto;
+  }
+  .bottom-container {
+    width: 50%;
+    height: auto;
+  }
+  .title-wrap, .trial-wrap {
+    min-width: 70%;
+    margin: 0 auto;
+  }
+  .title-wrap, .trial-wrap {
+    text-align: left;
+  }
+  .title-wrap h2 {
+    font-size: 3em;
+    text-align: left;
+    width: 100%;
+  }
+  .title-wrap p {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .registrar-container {
+    min-width: 70%;
+    margin: 20px auto;
+  }
+}
