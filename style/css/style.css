@@ -76,6 +76,10 @@ body {
   font-size: 1.2em;
 }
 
+.registrar-container .input-container input.error-input {
+  border: 1px solid #ff7a7a;
+}
+
 .registrar-container .input-container input:focus {
   outline: none;
   border: 1px solid #6055a5;
@@ -109,7 +113,7 @@ body {
   display: none;
 }
 
-.registrar-container .input-container img.error-on {
+.registrar-container .input-container img.error-icon {
   display: block;
 }
 

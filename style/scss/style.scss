@@ -107,7 +107,13 @@ body {
             padding: 10px 20px;
             font-size: 1.2em;
             
+            
     
+        }
+
+        input.error-input {
+            border: 1px solid $red;
+
         }
 
         input:focus {
@@ -137,6 +143,8 @@ body {
         }
 
 
+
+
         img {
             position: absolute;
             top: 20%;
@@ -146,7 +154,7 @@ body {
 
         }
 
-        img.error-on {
+        img.error-icon {
             display: block;
         }
     }
